@@ -1,0 +1,11 @@
+package com.demo;
+
+public class SwThread {
+    public void sleep(long time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
